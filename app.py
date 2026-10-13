@@ -9,23 +9,39 @@
 #   streamlit run app.py
 
 import json
+import subprocess
 import sys
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
 
-sys.path.append(str(Path(__file__).parent / "src"))
+SRC = Path(__file__).parent / "src"
+sys.path.append(str(SRC))
 from config import FIGURES_DIR, METRICS_FILE, SCORED_FILE
 
 st.set_page_config(page_title="Readmission Risk Dashboard", layout="wide")
 
+
+@st.cache_resource(show_spinner=False)
+def build_data():
+    # the data and model aren't in the repo (too big, and they're rebuilt from
+    # the scripts anyway). so on a fresh deploy like streamlit cloud, run the
+    # three sprints once. cache_resource makes sure it only happens one time,
+    # not for every visitor
+    for script in ["sprint1_data_foundation.py", "sprint2_analysis.py", "sprint3_risk_model.py"]:
+        result = subprocess.run([sys.executable, str(SRC / script)], capture_output=True, text=True)
+        if result.returncode != 0:
+            return f"{script} failed:\n\n{result.stderr[-1500:]}"
+    return None
+
+
 if not SCORED_FILE.exists():
-    st.error("No scored data yet. Run sprints 1-3 first:\n\n"
-             "`python src/sprint1_data_foundation.py`\n\n"
-             "`python src/sprint2_analysis.py`\n\n"
-             "`python src/sprint3_risk_model.py`")
-    st.stop()
+    with st.spinner("First launch: downloading the data and building the model. Takes about a minute..."):
+        error = build_data()
+    if error:
+        st.error(error)
+        st.stop()
 
 
 @st.cache_data
