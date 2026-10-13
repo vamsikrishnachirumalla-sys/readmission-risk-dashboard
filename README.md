@@ -1,5 +1,9 @@
 # 30-Day Readmission Risk Dashboard
 
+[![Open the live dashboard](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://readmission-risk-dashboard-frhatwq5yktqjjh95mzyss.streamlit.app/)
+
+**[View the live dashboard →](https://readmission-risk-dashboard-frhatwq5yktqjjh95mzyss.streamlit.app/)**
+
 **Which diabetic patients are most likely to come back to the hospital within 30 days, and who should a care manager call first?**
 
 Hospitals with too many 30-day readmissions lose Medicare payments under the CMS Hospital Readmissions Reduction Program. This project takes about 100,000 de-identified hospital stays, finds what drives readmission, scores each patient's risk, and puts it all in a dashboard a care team could use every morning.
