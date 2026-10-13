@@ -1,0 +1,66 @@
+feature,coefficient,odds_ratio,driver
+cat__discharge_disposition_id_22,0.9924820274789433,2.697922486746232,Discharged to: rehab facility
+cat__discharge_disposition_id_28,0.9149185247120274,2.496571834709086,Discharged to: psychiatric hospital
+cat__discharge_disposition_id_5,0.7055567560016771,2.024973787442084,Discharged to: another inpatient facility
+cat__admission_source_id_3,0.6558701061625027,1.926818324703842,Admitted from: HMO referral
+cat__discharge_disposition_id_infrequent_sklearn,0.5998160855882554,1.8217837172974558,Discharged to: other (rare codes)
+cat__admission_source_id_20,0.433638205989801,1.5428605694154272,Admitted from: not mapped
+cat__admission_source_id_9,0.3469383666818884,1.414729528208277,Admitted from: not available
+cat__admission_type_id_6,0.28889216820793023,1.3349477709565847,Admission type: unknown
+num__number_inpatient,0.21569823733532753,1.2407279171417989,Prior inpatient stays
+cat__discharge_disposition_id_8,0.16807253935991456,1.1830224232247237,Discharged to: home with IV provider
+cat__diag_1_group_Circulatory,0.151420502517878,1.1634858039411524,Primary dx: Circulatory
+cat__discharge_disposition_id_2,0.1415799104510373,1.1520925648189506,Discharged to: short-term hospital
+cat__diabetesMed_Yes,0.12288864619677099,1.1307584996772406,On diabetes meds: Yes
+cat__diag_1_group_infrequent_sklearn,0.11903542730908212,1.1264098232504474,Primary dx: other (rare codes)
+cat__admission_type_id_1,0.11859919651307417,1.1259185557574152,Admission type: emergency
+cat__diag_1_group_Neoplasms,0.11810109621765802,1.1253578750413853,Primary dx: Neoplasms
+cat__insulin_Down,0.11231110630619624,1.1188608911839941,Insulin: Down
+cat__admission_type_id_5,0.10498309358731336,1.1106918323824857,Admission type: not available
+cat__diag_1_group_Diabetes,0.09836232251938354,1.1033624857694972,Primary dx: Diabetes
+cat__A1Cresult_nan,0.09705985659628329,1.1019263292064738,HbA1c: nan
+num__time_in_hospital,0.08767283702143,1.0916309223760687,Longer stay
+cat__discharge_disposition_id_3,0.08336348485851901,1.0869368218301174,Discharged to: skilled nursing facility
+num__number_emergency,0.07909441723940257,1.0823065056387435,Prior ER visits
+cat__admission_type_id_2,0.0707124519377585,1.0732725640468812,Admission type: urgent
+num__number_diagnoses,0.06721617990558844,1.0695266633580134,More diagnoses
+num__age_mid,0.06702450885690503,1.069321685705621,Older age
+cat__diag_1_group_Genitourinary,0.06631113034289765,1.0685591266194496,Primary dx: Genitourinary
+cat__change_No,0.04095845042629792,1.0418088179339307,Med change: no
+cat__admission_source_id_1,0.039680962859179235,1.0404787698625266,Admitted from: physician referral
+cat__A1Cresult_Norm,0.036916665450856354,1.0376065487612218,HbA1c: Norm
+cat__gender_Male,0.026060807124910264,1.026403359213186,Gender: Male
+cat__insulin_Up,0.025562038088369213,1.0258915486468505,Insulin: Up
+num__num_lab_procedures,0.02058009839906723,1.0207933288801236,More lab tests
+cat__diag_1_group_Digestive,0.02046518682993656,1.0206760346563046,Primary dx: Digestive
+num__number_outpatient,0.012066747018691565,1.0121398439285842,Prior outpatient visits
+cat__gender_Female,0.010713887620512981,1.0107714868345326,Gender: Female
+cat__discharge_disposition_id_18,0.0026815969531109687,1.0026851956502532,Discharged to: unknown
+cat__change_Ch,-0.004183755680856484,0.9958249840324188,Med change: yes
+num__num_medications,-0.004645353054786889,0.9953654199098513,More medications
+cat__A1Cresult_>7,-0.013511529522576065,0.986579341463369,HbA1c: >7
+num__num_procedures,-0.014888390091865879,0.9852218939920291,More procedures
+cat__discharge_disposition_id_4,-0.021267726880797443,0.9789568364213992,Discharged to: intermediate care facility
+cat__insulin_Steady,-0.0348830908552929,0.9657183109599886,Insulin: Steady
+cat__admission_type_id_3,-0.03920301156872214,0.9615554824434934,Admission type: elective
+cat__diag_1_group_Other,-0.054406283118571895,0.947047259014746,Primary dx: Other
+cat__insulin_No,-0.06621535879382968,0.9359292819848586,Insulin: No
+cat__discharge_disposition_id_7,-0.07413587826614379,0.9285455161143107,Discharged to: left against medical advice
+cat__diag_1_group_Injury,-0.08183300171696295,0.9214258223787889,Primary dx: Injury
+cat__A1Cresult_>8,-0.08369029777914057,0.9197160500954558,HbA1c: >8
+cat__diabetesMed_No,-0.08611395145131878,0.9174896759830053,On diabetes meds: No
+cat__admission_source_id_7,-0.0935545049493679,0.9106883790494529,Admitted from: emergency room
+cat__admission_source_id_6,-0.10270418600414498,0.9023938747409284,Admitted from: another facility
+cat__admission_source_id_infrequent_sklearn,-0.1521422480208117,0.8588661000484745,Admitted from: other (rare codes)
+cat__diag_1_group_Respiratory,-0.15634839065200692,0.8552611734630213,Primary dx: Respiratory
+cat__admission_source_id_2,-0.17164579567758045,0.8422774586549091,Admitted from: clinic referral
+cat__admission_type_id_8,-0.19127794578637844,0.8259029999873367,Admission type: not mapped
+cat__admission_source_id_17,-0.2000852897857635,0.8186609266852352,Admitted from: unknown
+cat__diag_1_group_Musculoskeletal,-0.24433329550384897,0.7832265448694189,Primary dx: Musculoskeletal
+cat__discharge_disposition_id_6,-0.2773911769369084,0.7577580216652778,Discharged to: home with health service
+cat__admission_source_id_4,-0.27850155794955855,0.7569170885103436,Admitted from: another hospital
+cat__admission_type_id_infrequent_sklearn,-0.31593125814552836,0.7291095687888521,Admission type: other (rare codes)
+cat__admission_source_id_5,-0.440719364560707,0.6435732907057717,Admitted from: skilled nursing facility
+cat__discharge_disposition_id_1,-0.5376042977139778,0.5841460173402135,Discharged to: home
+cat__discharge_disposition_id_25,-0.8618441236509752,0.4223824382145664,Discharged to: not mapped
+cat__discharge_disposition_id_23,-1.7994530272093858,0.16538932694726882,Discharged to: long-term care hospital
